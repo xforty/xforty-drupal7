@@ -24,11 +24,9 @@ function xforty_install() {
 
   xforty_enable_theme_settings();
   xforty_setup_admin_role();
-  xforty_create_menus();
   xforty_add_default_blocks();
   xforty_add_content_types();
   xforty_setup_users();
-  xforty_setup_tags();
   xforty_set_variables();
   xforty_cleanup();
 }
