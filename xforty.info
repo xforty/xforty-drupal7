@@ -20,6 +20,7 @@ dependencies[] = contextual
 dependencies[] = dblog
 dependencies[] = field_ui
 dependencies[] = file
+dependencies[] = help
 dependencies[] = image
 dependencies[] = menu
 dependencies[] = overlay
