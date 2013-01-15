@@ -8,7 +8,7 @@
 ;----------------------------------------
 
 ; Replace <TAG> with the xforty-drupal version you want to use.
-includes[] = http://github.com/xforty/xforty-drupal/raw/<TAG>/base.make
+includes[] = https://raw.github.com/xforty/xforty-drupal7/<TAG>/base.make
 
 ;----------------------------------------
 ; base make file overrides
