@@ -23,7 +23,7 @@ function xforty_install() {
   }
 
   xforty_enable_theme_settings();
-  xforty_setup_admin_role();
+  xforty_setup_roles();
   xforty_add_default_blocks();
   xforty_add_content_types();
   xforty_setup_users();
@@ -71,14 +71,21 @@ function xforty_enable_theme_settings () {
 }
 
 /*
- * Create the admin role
+ * Create our base roles.
  */
-function xforty_setup_admin_role() {
-  // Create a default role for site administrators, with all available permissions assigned.
+function xforty_setup_roles() {
+  // editor
+  $editor_role = new stdClass();
+  $editor_role->name = 'editor';
+  $editor_role->weight = 10;
+  user_role_save($editor_role);
+
+  // admnistrator
   $admin_role = new stdClass();
   $admin_role->name = 'administrator';
   $admin_role->weight = 20;
   user_role_save($admin_role);
+
   // Set this as the administrator role.
   variable_set('user_admin_role', $admin_role->rid);
 
