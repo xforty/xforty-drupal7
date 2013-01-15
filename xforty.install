@@ -23,6 +23,7 @@ function xforty_install() {
   }
 
   xforty_enable_theme_settings();
+  xforty_setup_site_info();
   xforty_setup_roles();
   xforty_add_default_blocks();
   xforty_add_content_types();
@@ -68,6 +69,30 @@ function xforty_enable_theme_settings () {
     'favicon_path' => '',
     'favicon_upload' => '',
   ));
+}
+
+/**
+ * Configure site info.
+ */
+function xforty_setup_site_info() {
+  // Site information page variables
+  variable_set('site_frontpage', 'front');
+  variable_set('site_mail', 'admin@example.com');
+  variable_set('site_name', 'xforty base');
+  variable_set('site_slogan', '');
+  
+  // Insert empty front page
+  $values = array(
+    array(
+      'path' => 'front',
+      'page_title' => '',
+    ),
+  );
+  $query = db_insert('empty_page')->fields(array('path', 'page_title'));
+  foreach ($values as $record) {
+    $query->values($record);
+  }
+  $query->execute();
 }
 
 /*

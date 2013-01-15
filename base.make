@@ -102,6 +102,9 @@ projects[diff][subdir] = contrib
 projects[email][version] = 1.2
 projects[email][subdir] = contrib
 
+projects[empty_page][version] = 1.0
+projects[empty_page][subdir] = contrib
+
 projects[entity][version] = 1.0
 projects[entity][subdir] = contrib
 

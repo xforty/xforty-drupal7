@@ -48,6 +48,7 @@ dependencies[] = date_repeat_field
 dependencies[] = date_views
 dependencies[] = diff
 dependencies[] = email
+dependencies[] = empty_page
 dependencies[] = entity
 dependencies[] = features
 dependencies[] = features_override
