@@ -43,6 +43,9 @@ projects[admin_menu][subdir] = contrib
 projects[admin_views][version] = 1.1
 projects[admin_views][subdir] = contrib
 
+projects[adminrole][version] = 1.0
+projects[adminrole][subdir] = contrib
+
 projects[auto_nodetitle][version] = 1.0
 projects[auto_nodetitle][subdir] = contrib
 
