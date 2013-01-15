@@ -16,6 +16,7 @@ function sub_profile_install() {
 
   // project-specific install code goes here
   sub_profile_enable_default_theme('bartik');
+  sub_profile_setup_site_info();
 }
 
 /**
@@ -29,7 +30,7 @@ function sub_profile_install_base() {
 
   // Execute the base profile install
   if (!function_exists($base . '_install')) {
-    require_once(DRUPAL_ROOT . '/profiles/' . $base . '/' . $base . '.install');
+    require_once(drupal_get_path('profile', $base) . '/' . $base . '.install');
   }
   call_user_func($base . '_install');
 }
@@ -38,11 +39,47 @@ function sub_profile_install_base() {
  * Set default theme.
  */
 function sub_profile_enable_default_theme($default_theme) {
-  // Enable and set default theme.
+  // Disable current default theme.
+  $current_theme = variable_get('theme_default', 'bartik');
+  db_update('system')
+    ->fields(array('status' => 0))
+    ->condition('type', 'theme')
+    ->condition('name', $current_theme)
+    ->execute();
+
+  // Enable and set new default theme.
   db_update('system')
     ->fields(array('status' => 1))
     ->condition('type', 'theme')
     ->condition('name', $default_theme)
     ->execute();
   variable_set('theme_default', $default_theme);
+
+  /*
+  variable_set('theme_' . $default_theme . '_settings', array(
+     'toggle_logo' => 0,
+     'toggle_name' => 0,
+     'toggle_slogan' => 0,
+     'toggle_node_user_picture' => 0,
+     'toggle_comment_user_picture' => 0,
+     'toggle_comment_user_verification' => 0,
+     'toggle_favicon' => 1,
+     'toggle_main_menu' => 0,
+     'toggle_secondary_menu' => 0,
+     'default_logo' => 0,
+     'logo_path' => '',
+     'logo_upload' => '',
+     'default_favicon' => 1,
+     'favicon_path' => '',
+     'favicon_upload' => '',
+   ));
+   */
+}
+
+/**
+ * Configure site info.
+ */
+function sub_profile_setup_site_info() {
+  variable_set('site_mail', 'admin@example.com');
+  variable_set('site_name', 'Sub-Profile');
 }
