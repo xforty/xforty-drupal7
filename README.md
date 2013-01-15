@@ -1,8 +1,8 @@
-xforty-drupal
+xforty-drupal7
 ==============
-version 7.x-2.0.1 - [changelog](https://github.com/xforty/xforty-drupal/commits/7.x)
+version 7.x-2.0.1 - [changelog](https://github.com/xforty/xforty-drupal7/commits/master)
 
-A base make file and profile for Drupal projects.
+A base make file and profile for Drupal 7 projects.
 
 ### Requirements
 
@@ -26,11 +26,15 @@ A base make file and profile for Drupal projects.
 * View the `examples/sub_profile` folder to see how you can use
   `xforty` as a base profile.
 
+### Development
+
+* Follow [git-flow](http://nvie.com/posts/a-successful-git-branching-model/) practices
+
 ### Resources
 
-* [Project Wiki](https://github.com/xforty/xforty-drupal/wiki) - HowTos,
+* [Project Wiki](https://github.com/xforty/xforty-drupal7/wiki) - HowTos,
   FAQs, and advanced usage
-* [Project Issues](https://github.com/xforty/xforty-drupal/issues) - submit
+* [Project Issues](https://github.com/xforty/xforty-drupal7/issues) - submit
   bugs, support questions, and feature requests
 * [Drush Documentation](http://drush.ws)
 
