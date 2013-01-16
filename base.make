@@ -132,6 +132,9 @@ projects[field_group][subdir] = contrib
 projects[field_permissions][version] = 1.0-beta2
 projects[field_permissions][subdir] = contrib
 
+projects[file_entity][version] = 2.0-unstable7
+projects[file_entity][subdir] = contrib
+
 projects[fontyourface][version] = 2.6
 projects[fontyourface][subdir] = contrib
 
@@ -162,7 +165,7 @@ projects[link][subdir] = contrib
 projects[manual-crop][version] = 1.4
 projects[manual-crop][subdir] = contrib
 
-projects[media][version] = 1.2
+projects[media][version] = 2.0-unstable7
 projects[media][subdir] = contrib
 
 projects[media_youtube][version] = 2.0-rc1
