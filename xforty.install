@@ -196,7 +196,7 @@ function xforty_setup_users() {
  */
 function xforty_set_variables() {
   // pathauto variables since they don't get set early enough for content.
-  variable_set('pathauto_node_pattern', '[node:content-type:machine-name]/[node:title]');
+  variable_set('pathauto_node_pattern', '[node:title]');
   variable_set('pathauto_punctuation_underscore', '1');
 
   // Set up date defaults so it doesn't yell at us anymore
