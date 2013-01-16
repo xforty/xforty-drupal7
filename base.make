@@ -144,9 +144,6 @@ projects[honeypot][subdir] = contrib
 projects[image_resize_filter][version] = 1.13
 projects[image_resize_filter][subdir] = contrib
 
-projects[imagefield_crop][version] = 1.0
-projects[imagefield_crop][subdir] = contrib
-
 projects[imce][version] = 1.6
 projects[imce][subdir] = contrib
 

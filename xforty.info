@@ -56,7 +56,6 @@ dependencies[] = features_override
 dependencies[] = field_group
 dependencies[] = honeypot
 dependencies[] = image_resize_filter
-dependencies[] = imagefield_crop
 dependencies[] = imce
 dependencies[] = imce_wysiwyg
 dependencies[] = jquery_update
