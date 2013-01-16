@@ -61,6 +61,7 @@ dependencies[] = imce_wysiwyg
 dependencies[] = jquery_update
 dependencies[] = libraries
 dependencies[] = link
+dependencies[] = manualcrop
 dependencies[] = media
 dependencies[] = media_youtube
 dependencies[] = menu_block

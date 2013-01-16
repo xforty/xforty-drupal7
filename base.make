@@ -159,6 +159,9 @@ projects[libraries][subdir] = contrib
 projects[link][version] = 1.0
 projects[link][subdir] = contrib
 
+projects[manual-crop][version] = 1.4
+projects[manual-crop][subdir] = contrib
+
 projects[media][version] = 1.2
 projects[media][subdir] = contrib
 
