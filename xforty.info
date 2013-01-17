@@ -51,6 +51,7 @@ dependencies[] = diff
 dependencies[] = email
 dependencies[] = empty_page
 dependencies[] = entity
+dependencies[] = fe_block
 dependencies[] = features
 dependencies[] = features_override
 dependencies[] = field_group
