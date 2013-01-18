@@ -36,6 +36,7 @@ dependencies[] = admin_menu
 dependencies[] = admin_menu_toolbar
 dependencies[] = admin_views
 dependencies[] = adminrole
+dependencies[] = advanced_help
 dependencies[] = boxes
 dependencies[] = calendar
 dependencies[] = config_perms
