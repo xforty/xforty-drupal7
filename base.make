@@ -54,6 +54,9 @@ projects[config_perms][subdir] = contrib
 ; http://drupal.org/node/1274800#comment-6109048 (fixes invalid argument)
 projects[config_perms][patch][] = http://drupal.org/files/config_perms-hook-menu-alter-non-object-1274800-8.patch
 
+projects[context][version] = 7.x-3.0-beta6
+projects[context][subdir] = contrib
+
 projects[ctools][version] = 1.2
 projects[ctools][subdir] = contrib
 ; http://drupal.org/node/1727804#comment-6395400 (fixes multi-level tokens)
