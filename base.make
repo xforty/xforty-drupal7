@@ -57,7 +57,7 @@ projects[config_perms][subdir] = contrib
 ; http://drupal.org/node/1274800#comment-6109048 (fixes invalid argument)
 projects[config_perms][patch][] = http://drupal.org/files/config_perms-hook-menu-alter-non-object-1274800-8.patch
 
-projects[context][version] = 7.x-3.0-beta6
+projects[context][version] = 3.0-beta6
 projects[context][subdir] = contrib
 
 projects[ctools][version] = 1.2
@@ -96,7 +96,7 @@ projects[email][subdir] = contrib
 projects[entity][version] = 1.0
 projects[entity][subdir] = contrib
 
-projects[entity_autocomplete][version] = 7.x-1.0-beta3
+projects[entity_autocomplete][version] = 1.0-beta3
 projects[entity_autocomplete][subdir] = contrib
 
 projects[entityreference][version] = 1.0
@@ -206,7 +206,7 @@ projects[view_unpublished][subdir] = contrib
 projects[views][version] = 3.5
 projects[views][subdir] = contrib
 
-projects[views_boxes][version] = 7.x-1.0-beta8
+projects[views_boxes][version] = 1.0-beta8
 projects[views_boxes][subdir] = contrib
 
 projects[views_bulk_operations][version] = 3.1
