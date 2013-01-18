@@ -93,6 +93,9 @@ projects[email][subdir] = contrib
 projects[entity][version] = 1.0
 projects[entity][subdir] = contrib
 
+projects[entity_autocomplete][version] = 7.x-1.0-beta3
+projects[entity_autocomplete][subdir] = contrib
+
 projects[entityreference][version] = 1.0
 projects[entityreference][subdir] = contrib
 
@@ -199,6 +202,9 @@ projects[view_unpublished][subdir] = contrib
 
 projects[views][version] = 3.5
 projects[views][subdir] = contrib
+
+projects[views_boxes][version] = 7.x-1.0-beta8
+projects[views_boxes][subdir] = contrib
 
 projects[views_bulk_operations][version] = 3.1
 projects[views_bulk_operations][subdir] = contrib
