@@ -26,6 +26,7 @@ function xforty_install() {
   xforty_setup_site_info();
   xforty_setup_roles();
   xforty_add_default_blocks();
+  xforty_add_empty_page();
   xforty_add_content_types();
   xforty_setup_users();
   xforty_set_variables();
@@ -75,24 +76,14 @@ function xforty_enable_theme_settings () {
  * Configure site info.
  */
 function xforty_setup_site_info() {
+  // TODO: this needs to be moved to the .profile since it is overwritten to Site-Install
+  // https://twitter.com/ultimateboy/status/227498000858095616
+  // http://api.drupal.org/api/drupal/modules%21system%21system.api.php/function/hook_install_tasks/7
+
   // Site information page variables
-  variable_set('site_frontpage', 'front');
   variable_set('site_mail', 'admin@example.com');
   variable_set('site_name', 'xforty base');
   variable_set('site_slogan', '');
-  
-  // Insert empty front page
-  $values = array(
-    array(
-      'path' => 'front',
-      'page_title' => '',
-    ),
-  );
-  $query = db_insert('empty_page')->fields(array('path', 'page_title'));
-  foreach ($values as $record) {
-    $query->values($record);
-  }
-  $query->execute();
 }
 
 /*
@@ -124,7 +115,7 @@ function xforty_setup_roles() {
  * Enable some standard blocks.
  */
 function xforty_add_default_blocks() {
-  $values = array(
+/*  $values = array(
     array(
       'module' => 'system',
       'delta' => 'main',
@@ -150,7 +141,7 @@ function xforty_add_default_blocks() {
   foreach ($values as $record) {
     $query->values($record);
   }
-  $query->execute();
+  $query->execute();*/
 }
 
 /**
@@ -220,7 +211,7 @@ function xforty_cleanup() {
   }
 
   // Rebuild content access permissions
-  node_access_rebuild(true);
+  node_access_rebuild();
 
   // Update the menu router information
   menu_rebuild();
