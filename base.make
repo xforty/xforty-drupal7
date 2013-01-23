@@ -153,6 +153,9 @@ projects[media][subdir] = contrib
 projects[media_youtube][version] = 2.0-rc1
 projects[media_youtube][subdir] = contrib
 
+projects[menu_admin_per_menu][version] = 1.0
+projects[menu_admin_per_menu][subdir] = contrib
+
 projects[menu_attributes][version] = 1.0-rc2
 projects[menu_attributes][subdir] = contrib
 

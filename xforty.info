@@ -72,6 +72,7 @@ dependencies[] = link
 dependencies[] = manualcrop
 dependencies[] = media
 dependencies[] = media_youtube
+dependencies[] = menu_admin_per_menu
 dependencies[] = menu_block
 dependencies[] = menu_position
 dependencies[] = metatag
