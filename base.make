@@ -74,19 +74,6 @@ projects[date][subdir] = contrib
 projects[date_ical][version] = 1.1
 projects[date_ical][subdir] = contrib
 
-projects[devel][version] = 1.3
-projects[devel][subdir] = contrib
-; http://drupal.org/node/660758#comment-6154264 (removes duplicates from generated taxonomy terms)
-projects[devel][patch][] = http://drupal.org/files/remove_duplicates-660758-17.patch
-; http://drupal.org/node/1010394#comment-4563434 (fixes long unbroken text)
-projects[devel][patch][] = http://drupal.org/files/issues/devel-greeking-text-field-1010394.patch
-
-; From a dev version of the 7.x-1.x branch (07/01/2012)
-; No official release available yet
-projects[devel_themer][download][type] = file
-projects[devel_themer][download][url] = http://drupalcode.org/project/devel_themer.git/snapshot/eae19ba94e47a0d5d017f350e1aa9933d85e2de0.tar.gz
-projects[devel_themer][subdir] = contrib
-
 projects[diff][version] = 3.2
 projects[diff][subdir] = contrib
 
@@ -171,11 +158,6 @@ projects[metatag][subdir] = contrib
 projects[module_filter][version] = 1.7
 projects[module_filter][subdir] = contrib
 
-projects[omega_tools][version] = 3.0-rc4
-projects[omega_tools][subdir] = contrib
-; http://drupal.org/node/1291520#comment-6109328 (sorted for better vcs)
-projects[omega_tools][patch][] = http://drupal.org/files/exported_info_file_readable-1291520-4.patch
-
 projects[pathauto][version] = 1.2
 projects[pathauto][subdir] = contrib
 
@@ -237,6 +219,36 @@ projects[wysiwyg][patch][] = http://drupal.org/files/wysiwyg_height_per_field-50
 
 projects[xmlsitemap][version] = 2.0-rc2
 projects[xmlsitemap][subdir] = contrib
+
+;----------------------------------------
+; modules (NOT enabled by default)
+;----------------------------------------
+
+; Very special cases of modules included in this make file
+; that aren't enabled by default.
+
+projects[devel][version] = 1.3
+projects[devel][subdir] = contrib
+; http://drupal.org/node/660758#comment-6154264 (removes duplicates from generated taxonomy terms)
+projects[devel][patch][] = http://drupal.org/files/remove_duplicates-660758-17.patch
+; http://drupal.org/node/1010394#comment-4563434 (fixes long unbroken text)
+projects[devel][patch][] = http://drupal.org/files/issues/devel-greeking-text-field-1010394.patch
+
+; From a dev version of the 7.x-1.x branch (07/01/2012)
+; No official release available yet
+projects[devel_themer][download][type] = file
+projects[devel_themer][download][url] = http://drupalcode.org/project/devel_themer.git/snapshot/eae19ba94e47a0d5d017f350e1aa9933d85e2de0.tar.gz
+projects[devel_themer][subdir] = contrib
+
+; Only enable in sub-profile if omega is used as base for custom theme
+projects[omega_tools][version] = 3.0-rc4
+projects[omega_tools][subdir] = contrib
+; http://drupal.org/node/1291520#comment-6109328 (sorted for better vcs)
+projects[omega_tools][patch][] = http://drupal.org/files/exported_info_file_readable-1291520-4.patch
+
+; Required for devel_themer
+projects[simplehtmldom][version] = 1.12
+projects[simplehtmldom][subdir] = contrib
 
 ;----------------------------------------
 ; profiles

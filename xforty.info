@@ -78,7 +78,6 @@ dependencies[] = menu_block
 dependencies[] = menu_position
 dependencies[] = metatag
 dependencies[] = module_filter
-dependencies[] = omega_tools
 dependencies[] = pathauto
 dependencies[] = pathologic
 dependencies[] = redirect
