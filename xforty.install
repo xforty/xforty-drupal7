@@ -1,11 +1,10 @@
 <?php
 /**
- * The base profile xforty.install code. It was adapted
- * from the OpenEnterprise profile install.
+ * Install code for the xforty profile.
+ *
+ * This profile can be used as a standalone profile or as a
+ * base profile for other sub-profiles.
  */
-
-define('XFORTY_DEFAULT_THEME', 'bartik');
-define('XFORTY_ADMIN_THEME',   'seven');
 
 /**
  * Perform actions to set up the site for this profile.
@@ -24,30 +23,28 @@ function xforty_install() {
 
   xforty_enable_theme_settings();
   xforty_setup_roles();
-  xforty_setup_users();
   xforty_set_variables();
-  xforty_cleanup();
 }
 
 /**
  * Set default and admin themes.
  */
 function xforty_enable_theme_settings () {
-  // Enable and set default theme.
+  // Enable and set default theme (bartik).
   db_update('system')
     ->fields(array('status' => 1))
     ->condition('type', 'theme')
-    ->condition('name', XFORTY_DEFAULT_THEME)
+    ->condition('name', 'bartik')
     ->execute();
-  variable_set('theme_default', XFORTY_DEFAULT_THEME);
+  variable_set('theme_default', 'bartik');
 
-  // Enable and set admin theme.
+  // Enable and set admin theme (seven).
   db_update('system')
     ->fields(array('status' => 1))
     ->condition('type', 'theme')
-    ->condition('name', XFORTY_ADMIN_THEME)
+    ->condition('name', 'seven')
     ->execute();
-  variable_set('admin_theme', XFORTY_ADMIN_THEME);
+  variable_set('admin_theme', 'seven');
   variable_set('node_admin_theme', '1');
   variable_set('theme_seven_settings', array(
     'toggle_logo' => 1,
@@ -94,17 +91,12 @@ function xforty_setup_roles() {
 }
 
 /**
- * Configure some user settings.
- */
-function xforty_setup_users() {
-  // Only administrators can register new users.
-  variable_set('user_register', USER_REGISTER_ADMINISTRATORS_ONLY);
-}
-
-/**
  * Set miscellaneous variables.
  */
 function xforty_set_variables() {
+  // Only administrators can register new users.
+  variable_set('user_register', USER_REGISTER_ADMINISTRATORS_ONLY);
+
   // pathauto variables since they don't get set early enough for content.
   variable_set('pathauto_node_pattern', '[node:title]');
   variable_set('pathauto_punctuation_underscore', '1');
@@ -120,18 +112,34 @@ function xforty_set_variables() {
 }
 
 /**
- * Perform various cleanup tasks after site-install.
+ * Provide a new function for the install_finished install task.
+ *
+ * Implements hook_install_tasks_alter()
  */
-function xforty_cleanup() {
-  // Assign all permissions to administrator role
-  $admin_rid = variable_get('user_admin_role', null);
-  if (!is_null($admin_rid)) {
-    user_role_grant_permissions($admin_rid, array_keys(module_invoke_all('permission')));
+function xforty_install_tasks_alter(&$tasks, &$install_state) {
+  $tasks['install_finished']['function'] = 'xforty_install_finished';
+}
+
+/**
+ * Tasks to finish the install.
+ */
+function xforty_install_finished(&$install_state) {
+  // Execute core's install_finished
+  $output = install_finished($install_state);
+
+  // Revert all feature modules
+  if (module_exists('features')) {
+    features_revert();
   }
 
-  // Rebuild content access permissions
-  node_access_rebuild();
+  // Rebuild content access permissions if necessary
+  if (node_access_needs_rebuild()) {
+    node_access_rebuild(true);
+    node_access_needs_rebuild(false);
+  }
 
   // Update the menu router information
   menu_rebuild();
+
+  return $output;
 }
