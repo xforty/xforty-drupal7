@@ -43,7 +43,7 @@ projects[adminrole][subdir] = contrib
 projects[advanced_help][version] = 1.0
 projects[advanced_help][subdir] = contrib
 
-projects[boxes][version] = 1.0
+projects[boxes][version] = 1.1
 projects[boxes][subdir] = contrib
 
 projects[calendar][version] = 3.4
