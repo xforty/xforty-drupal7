@@ -104,6 +104,9 @@ projects[field_group][subdir] = contrib
 projects[field_permissions][version] = 1.0-beta2
 projects[field_permissions][subdir] = contrib
 
+projects[filefield_sources][version] = 1.7
+projects[filefield_sources][subdir] = contrib
+
 projects[google_analytics][version] = 1.3
 projects[google_analytics][subdir] = contrib
 

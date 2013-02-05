@@ -60,6 +60,7 @@ dependencies[] = features_override
 dependencies[] = field_collection
 dependencies[] = field_group
 dependencies[] = field_permissions
+dependencies[] = filefield_sources
 dependencies[] = googleanalytics
 dependencies[] = honeypot
 dependencies[] = image_resize_filter
