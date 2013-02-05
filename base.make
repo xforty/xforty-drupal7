@@ -119,6 +119,9 @@ projects[image_resize_filter][subdir] = contrib
 projects[imce][version] = 1.6
 projects[imce][subdir] = contrib
 
+projects[imce_tools][version] = 1.1
+projects[imce_tools][subdir] = contrib
+
 projects[imce_wysiwyg][version] = 1.0
 projects[imce_wysiwyg][subdir] = contrib
 
