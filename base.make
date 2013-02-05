@@ -200,9 +200,6 @@ projects[webform_validation][subdir] = contrib
 projects[workbench][version] = 1.2
 projects[workbench][subdir] = contrib
 
-projects[workbench_media][version] = 2.1
-projects[workbench_media][subdir] = contrib
-
 projects[wysiwyg][version] = 2.2
 projects[wysiwyg][subdir] = contrib
 ; http://drupal.org/node/507696#comment-6143656 (height now uses field's rows setting)

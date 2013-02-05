@@ -93,6 +93,5 @@ dependencies[] = views_ui
 dependencies[] = webform
 dependencies[] = webform_validation
 dependencies[] = workbench
-dependencies[] = workbench_media
 dependencies[] = wysiwyg
 dependencies[] = xmlsitemap
