@@ -104,9 +104,6 @@ projects[field_group][subdir] = contrib
 projects[field_permissions][version] = 1.0-beta2
 projects[field_permissions][subdir] = contrib
 
-projects[file_entity][version] = 2.0-unstable7
-projects[file_entity][subdir] = contrib
-
 projects[google_analytics][version] = 1.3
 projects[google_analytics][subdir] = contrib
 
@@ -133,12 +130,6 @@ projects[link][subdir] = contrib
 
 projects[manual-crop][version] = 1.4
 projects[manual-crop][subdir] = contrib
-
-projects[media][version] = 2.0-unstable7
-projects[media][subdir] = contrib
-
-projects[media_youtube][version] = 2.0-rc1
-projects[media_youtube][subdir] = contrib
 
 projects[menu_admin_per_menu][version] = 1.0
 projects[menu_admin_per_menu][subdir] = contrib
