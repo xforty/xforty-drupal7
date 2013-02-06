@@ -43,6 +43,9 @@ projects[adminrole][subdir] = contrib
 projects[advanced_help][version] = 1.0
 projects[advanced_help][subdir] = contrib
 
+projects[blockreference][version] = 1.15
+projects[blockreference][subdir] = contrib
+
 projects[boxes][version] = 1.1
 projects[boxes][subdir] = contrib
 
@@ -151,6 +154,9 @@ projects[metatag][subdir] = contrib
 
 projects[module_filter][version] = 1.7
 projects[module_filter][subdir] = contrib
+
+projects[multiple_selects][version] = 1.2
+projects[multiple_selects][subdir] = contrib
 
 projects[pathauto][version] = 1.2
 projects[pathauto][subdir] = contrib
