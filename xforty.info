@@ -55,6 +55,7 @@ dependencies[] = diff
 dependencies[] = email
 dependencies[] = entity
 dependencies[] = entity_autocomplete
+dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = features_override
 dependencies[] = field_collection
