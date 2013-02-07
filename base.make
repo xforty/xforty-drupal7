@@ -11,6 +11,8 @@ projects[drupal][patch][] = http://drupal.org/files/field_sql_storage_null_strin
 projects[drupal][patch][] = http://drupal.org/files/field-info-cache-1040790-240-D7.patch
 ; http://drupal.org/node/1356276#comment-6961280 ("kinda" allows us to have sub-profiles)
 projects[drupal][patch][] = http://drupal.org/files/1356276-base_profiles_variable-42.patch
+; http://drupal.org/node/737816#comment-6978566 (fixes exceptions when granting permissions)
+projects[drupal][patch][] = http://drupal.org/files/drupal-7.x-fix_pdoexception_grant_permissions-737816-26-do-not-test.patch
 
 ;----------------------------------------
 ; features
