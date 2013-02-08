@@ -147,6 +147,8 @@ projects[menu_admin_per_menu][subdir] = contrib
 
 projects[menu_block][version] = 2.3
 projects[menu_block][subdir] = contrib
+; http://drupal.org/node/693302#comment-6726614 (make menu_blocks exportable)
+projects[menu_block][patch][] = http://drupal.org/files/menu_blocks-exportable_api-693302-63.patch
 
 projects[menu_position][version] = 1.1
 projects[menu_position][subdir] = contrib
