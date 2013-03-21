@@ -93,7 +93,6 @@ dependencies[] = taxonomy_formatter
 dependencies[] = token
 dependencies[] = view_unpublished
 dependencies[] = views
-dependencies[] = views_boxes
 dependencies[] = views_bulk_operations
 dependencies[] = views_ui
 dependencies[] = webform

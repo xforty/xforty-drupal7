@@ -195,9 +195,6 @@ projects[view_unpublished][subdir] = contrib
 projects[views][version] = 3.5
 projects[views][subdir] = contrib
 
-projects[views_boxes][version] = 1.0-beta8
-projects[views_boxes][subdir] = contrib
-
 projects[views_bulk_operations][version] = 3.1
 projects[views_bulk_operations][subdir] = contrib
 
