@@ -109,7 +109,7 @@ projects[filefield_sources][subdir] = contrib
 projects[google_analytics][version] = 1.3
 projects[google_analytics][subdir] = contrib
 
-projects[honeypot][version] = 1.13
+projects[honeypot][version] = 1.14
 projects[honeypot][subdir] = contrib
 
 projects[image_resize_filter][version] = 1.13
