@@ -77,7 +77,6 @@ dependencies[] = link
 dependencies[] = manualcrop
 dependencies[] = menu_admin_per_menu
 dependencies[] = menu_block
-dependencies[] = menu_position
 dependencies[] = metatag
 dependencies[] = module_filter
 dependencies[] = multiple_selects
