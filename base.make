@@ -42,9 +42,6 @@ projects[admin_views][subdir] = contrib
 projects[adminrole][version] = 1.0
 projects[adminrole][subdir] = contrib
 
-projects[advanced_help][version] = 1.0
-projects[advanced_help][subdir] = contrib
-
 projects[blockreference][version] = 1.15
 projects[blockreference][subdir] = contrib
 
