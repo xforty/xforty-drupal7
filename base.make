@@ -124,7 +124,7 @@ projects[imce_tools][subdir] = contrib
 projects[imce_wysiwyg][version] = 1.0
 projects[imce_wysiwyg][subdir] = contrib
 
-projects[jquery_update][version] = 2.2
+projects[jquery_update][version] = 2.3
 projects[jquery_update][subdir] = contrib
 
 projects[libraries][version] = 2.0
