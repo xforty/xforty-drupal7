@@ -171,9 +171,6 @@ projects[revision_all][subdir] = contrib
 projects[role_delegation][version] = 1.1
 projects[role_delegation][subdir] = contrib
 
-projects[rules][version] = 2.2
-projects[rules][subdir] = contrib
-
 projects[special_menu_items][version] = 2.0
 projects[special_menu_items][subdir] = contrib
 

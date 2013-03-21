@@ -85,7 +85,6 @@ dependencies[] = pathologic
 dependencies[] = redirect
 dependencies[] = revision_all
 dependencies[] = role_delegation
-dependencies[] = rules
 dependencies[] = special_menu_items
 dependencies[] = strongarm
 dependencies[] = taxonomy_formatter
