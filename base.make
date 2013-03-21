@@ -174,7 +174,7 @@ projects[strongarm][subdir] = contrib
 projects[taxonomy_formatter][version] = 1.4
 projects[taxonomy_formatter][subdir] = contrib
 
-projects[token][version] = 1.4
+projects[token][version] = 1.5
 projects[token][subdir] = contrib
 
 projects[view_unpublished][version] = 1.1
