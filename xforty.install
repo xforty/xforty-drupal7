@@ -109,6 +109,9 @@ function xforty_set_variables() {
 
   // Keep admin_menu displayed at top of view window
   variable_set('admin_menu_position_fixed', 1);
+
+  // Turn off views' advanced_help warning
+  variable_set('views_ui_show_advanced_help_warning', 0);
 }
 
 /**
