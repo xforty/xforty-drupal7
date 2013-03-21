@@ -91,7 +91,7 @@ projects[entityreference][subdir] = contrib
 projects[features][version] = 2.0-beta1
 projects[features][subdir] = contrib
 
-projects[features_override][version] = 2.0-beta1
+projects[features_override][version] = 2.0-beta2
 projects[features_override][subdir] = contrib
 
 projects[field_collection][version] = 1.0-beta5
