@@ -189,7 +189,7 @@ projects[views_bulk_operations][subdir] = contrib
 projects[webform][version] = 3.18
 projects[webform][subdir] = contrib
 
-projects[webform_validation][version] = 1.1
+projects[webform_validation][version] = 1.2
 projects[webform_validation][subdir] = contrib
 
 projects[workbench][version] = 1.2
