@@ -48,9 +48,6 @@ projects[advanced_help][subdir] = contrib
 projects[blockreference][version] = 1.15
 projects[blockreference][subdir] = contrib
 
-projects[boxes][version] = 1.1
-projects[boxes][subdir] = contrib
-
 projects[calendar][version] = 3.4
 projects[calendar][subdir] = contrib
 

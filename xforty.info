@@ -40,7 +40,6 @@ dependencies[] = admin_views
 dependencies[] = adminrole
 dependencies[] = advanced_help
 dependencies[] = blockreference
-dependencies[] = boxes
 dependencies[] = calendar
 dependencies[] = config_perms
 dependencies[] = context
