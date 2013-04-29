@@ -199,6 +199,8 @@ projects[wysiwyg][version] = 2.2
 projects[wysiwyg][subdir] = contrib
 ; http://drupal.org/node/507696#comment-6143656 (height now uses field's rows setting)
 projects[wysiwyg][patch][] = http://drupal.org/files/wysiwyg_height_per_field-507696-75.patch
+; http://drupal.org/node/1802394#comment-6556656 (fixes file_get_contents stream wrapper issue)
+projects[wysiwyg][patch][] = http://drupal.org/files/wysiwyg-1802394-4.patch
 
 projects[xmlsitemap][version] = 2.0-rc2
 projects[xmlsitemap][subdir] = contrib
